@@ -1,0 +1,63 @@
+baseColor = #7abd9a
+wordColor = #666
+bgColor = #f7f7f7
+$basecolor = #3F51B5 // 主题色
+// $basecolor = #e83632 // 主题色
+$headercolor = #303F9F  // header主题色
+$bgcolor = #FFFFFF // 背景色
+$backcolor = #f8f8f8
+$iconcolor = #757575 // 图标色
+$fontcolor = #212121 //字体色
+$fontlesscolor = #757575 // 二级字体色
+$infofontcolor = #BDBDBD // 三级字体色
+$elsecolor = #607D8B // 预留色
+$errcolor = #D32F2F // 危险色
+$warncolor = #FFA000 // 警告色
+$successcolor = #4CAF50 // 成功色
+$headerheight = 50px
+$toastbgcolor = rgba(0,0,0,0.7)
+$maskColor = rgba(0,0,0,0.8)
+$proiconcolor = #f30213
+body{
+  padding 0
+  margin 0
+  .el-message{
+    width 70%!important
+    min-width 235px!important  
+    padding 5px 10px
+    background-color rgba(0,0,0,0.4)
+    border 0
+    i{
+      color $elsecolor
+    }
+    .el-message__content{
+       padding-left 4px
+       color #fff
+       font-size 12px
+      }
+  }
+  .el-message--info{
+    background-color rgba(0,0,0,0.6)
+    border 0
+    .el-message__content{
+       color #fff
+       font-size 12px
+      }
+    }
+}
+ul,p{
+    list-style-type: none;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 0px;
+}
+li{
+  list-style none
+}
+p{
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}

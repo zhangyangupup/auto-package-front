@@ -1,0 +1,87 @@
+// 使用
+.app-page{
+  animation myfirst .5s
+  position relative
+  will-change: left
+  
+  // -webkit-animation myfirst 0.5s
+}
+.vcontent{
+  animation vcontent .5s
+  position relative
+  will-change: top
+}
+.app-box{
+  animation vcontent .5s
+  position relative
+  will-change: top
+  }
+.baidu-page{
+  animation myfirst .5s
+  position relative
+  will-change: left
+}
+.frame-cell{
+  animation myfirst .5s
+  position relative
+  will-change: left
+}
+@keyframes opticKey
+{
+from {
+ opacity: 0;
+ }
+to {
+  opacity: 1;
+ }
+}
+@keyframes myfirst
+{
+from {
+ left: 100%;
+ }
+to {
+  left: 0;
+ }
+}
+
+@-webkit-keyframes myfirst /* Safari 和 Chrome */
+{
+from {
+  left: 100%;
+ }
+to {
+  left: 0;
+ }
+}
+
+
+@keyframes vcontent
+{
+from {
+ top: 100%;
+ }
+to {
+  top: 0;
+ }
+}
+
+@-webkit-keyframes vcontent /* Safari 和 Chrome */
+{
+from {
+ top: 100%;
+ }
+to {
+  top: 0;
+ }
+}
+
+@-webkit-keyframes change /* Safari 和 Chrome */
+{
+from {
+ top: 100%;
+ }
+to {
+  top: 0;
+ }
+}
