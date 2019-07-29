@@ -61,7 +61,7 @@
       <a :href="zipPath" target="_blank">{{zipPath}}</a>
     </div>
     <!-- 开始打包 -->
-   
+
     <!-- 打包进程 -->
     <div class="process-box">
       <p class="process-box-title">打包进程 <a style="fontWeight:400;fontSize:14px;float:right">msg:{{processRes.length}}</a> </p>
@@ -98,7 +98,7 @@ export default {
       zipPath:'',
       packagePath:'',
       processRes:[
-       
+
       ],
       data:{
         length:1
@@ -192,7 +192,7 @@ export default {
               message: `您还没有上传资源文件`
             });
         this.isPackage = false
-        return 
+        return
         }
         shell = `autoPackage&${this.result[0].dirName}`
         // 上传资源包方式
@@ -204,12 +204,12 @@ export default {
               message: `您还没有输入代码资源git地址`
             });
         this.isPackage = false
-        return 
+        return
         }
         shell=`autoPackageGit&${this.gitAddress}`
         this.send(shell)
       }
-      
+
     },
     sureBtn(){
       if(this.gitAddress!=='' || this.proName!==''){
@@ -272,11 +272,11 @@ export default {
 
               }
           }
- 
-      
 
 
-      
+
+
+
     },
     /**
      * 上传文件发生变化的函数
@@ -296,7 +296,7 @@ export default {
     },
     /**
      *  点击已选文件时的操作
-     */ 
+     */
     handlePreview(file) {
       // console.log(file);
     }
@@ -455,9 +455,11 @@ fontSize = 22px
     }
     .no-data-box{
       padding 10vh
+      border: 1px dashed #ccc
+        border-radius: 5px
       i{
         font-size 60px
-      }  
+      }
     }
   }
   }

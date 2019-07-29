@@ -13,6 +13,7 @@
       <!-- 内容区 -->
       <file-com v-if="selectTab===0"/>
       <package-com v-if="selectTab===1"/>
+      <del-file-com v-if="selectTab===2"/>
       <!-- 侧边框 -->
       <div v-if="showDrawer" class="drwer-box">
         <div class="drwer-header">
@@ -50,10 +51,12 @@
 <script>
 import FileCom from './file-component/index.vue'
 import PackageCom from './package-component/index.vue'
+import DelFileCom from './delFile-component/index.vue'
 export default {
   components:{
     FileCom,
-    PackageCom
+    PackageCom,
+    DelFileCom
   },
   data(){
     return {
@@ -67,6 +70,10 @@ export default {
         {
           icon:'iconfont icon-yingyong2',
           text:"前端应用打包"
+        },
+        {
+          icon:'iconfont icon-liuchengmenhu',
+          text:"垃圾文件删除"
         }
       ]
     }
@@ -112,7 +119,7 @@ fontSize = 20px
   width 100vw
   display flex
   flex-direction column
-  
+
   .ctrl-header-box, .ctrl-footer-box{
     display flex
     flex-direction row
@@ -192,7 +199,7 @@ fontSize = 20px
           i:hover{
             color hoverColor
             transition all .3s linear
-          }  
+          }
         }
         ul{
           padding-top 20px
@@ -226,7 +233,7 @@ fontSize = 20px
         }
       }
     }
-  
+
   }
   .mask-box{
       position fixed
@@ -243,7 +250,7 @@ fontSize = 20px
       top 49vh
       background-color #eee
       border-top-right-radius 5px
-      border-bottom-right-radius 5px 
+      border-bottom-right-radius 5px
       border 1px solid #ccc
       width 40px
       height 40px
@@ -253,7 +260,7 @@ fontSize = 20px
       box-shadow 3px 3px 10px 1px #aaa
       transition all .3s ease-in-out
       i{
-        font-size 22px 
+        font-size 22px
       }
     }
     .sild-button:hover{
